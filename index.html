@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class=" container container-header">
+            <h2>
+                Sitio web de administracion de libros
+            </h2>
+        </div>
+    </header>
+    <main class="container main-container">
+        <div class="book-containers">
+
+        </div>
+        <aside>
+            <div class="container-menu">
+                <button onclick="addNewBookModal()">
+                    Agregar nuevo libro
+                </button>
+
+            </div>
+        </aside>
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="container container-footer">
+            <p>
+                Todos los derechos recervados a Franco Curci
+            </p>
+        </div>
+
+    </footer>
+
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="form-modal" id="form_add_book">
+                <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
+                <input type="text" id="autor" placeholder="autor" name="autor" required>
+                <input type="number" id="pags" placeholder="pags" name="pags" required>
+                <div class="chack"> <label for="isread">Has leido el libro?</label>
+                    <input type="checkbox" id="isread" placeholder="Lo leiste?" name="isread">
+                </div>
+
+                <button class="buttons-book">
+                    Añadir
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
